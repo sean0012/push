@@ -7,13 +7,7 @@ let vapidKeys = {
 
 push.setVapidDetails('mailto:test@code', vapidKeys.publicKey, vapidKeys.privateKey);
 
-let sub = {
-	"endpoint": "https://updates.push.services.mozilla.com/wpush/v1/gAAAAABj3KTaQoLWA5qrpI1dqwMGEePtSJZOhraP7JA-2kN2dYEberRU1dmdB6iNffyjfGzz-V_28F59600zjSCvdpvTw-KgYQze7pgUKXOuAS7L2Wh3j1ZvmbPfmq-gxvc2CXpy2ZEh",
-	"expirationTime":null,
-	"keys":{
-		"auth":"6aSqYbSjrxFNHZ85igMI5Q",
-		"p256dh":"BG6BZPVFsGiJEbF60F4xV6BqHzAsRVKoihT5QM0VUyKDmSfpJv_bwE3Llu-fSQHsf0oTCyfu8Cu0XYhRzmpPyOA"
-	}
-};
+let sub = {"endpoint":"https://updates.push.services.mozilla.com/wpush/v1/gAAAAABj3KwASEtDMX5i2kaTII95rVvkz8uGErAy-K4xNGGAINJ1Y9jI3OPxn2d6ySiO88TNlQ0tCqySmOekUJ_6V6vrsovZaOLB67UoCQ-eeJJQ6e3Yz4tcUvhl9QOwF_T2YOgqYgQJ","expirationTime":null,"keys":{"auth":"M9hBgvRdtkPJ12iJEfwttA","p256dh":"BKrDNpQLBODF9MfjBQoliGE6mimrii5GDYE5fXvhlFABl3jFkuMa_FyQ0MSutSG6QYLlrRoJ2ZX8fSeziqyaTeU"}}
+
 
 push.sendNotification(sub, 'test message');
