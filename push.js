@@ -8,7 +8,7 @@ let vapidKeys = {
 push.setVapidDetails('mailto:test@code', vapidKeys.publicKey, vapidKeys.privateKey);
 
 let sub = {
-	"endpoint":"https://updates.push.services.mozilla.com/wpush/v1/gAAAAABj3…9TYKCU5tNqZ3Q8x4_LVgNnIWLM3C9WzA5u31vXL7w_3URDabaNZInQY3pcQT",
+	"endpoint":"https://updates.push.services.mozilla.com/wpush/v1/gAAAAABj3JCgffUf4P50kp4ToWNFUveFt0Pf9e0S_HJvLxz43IzJRaPZOo4YVJvqTq31_Dz_Ql2lBs2-9TYKCU5tNqZ3Q8x4_LVgNnIWLM3C9WzA5u31vXL7w_3URDabaNZInQY3pcQT",
 	"expirationTime":null,
 	"keys":{
 		"auth":"pg4N9No_dwavo43nQTuELA",
@@ -16,4 +16,4 @@ let sub = {
 	}
 };
 
-push.sendNotification(sub, encodeURI('test message'));
+push.sendNotification(sub, 'test message');
